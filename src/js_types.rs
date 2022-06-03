@@ -35,7 +35,7 @@ impl JsArray {
 
     /// Create a string containing the syntax of Javascript and elements from the JsArray.elements.
     /// ## Example
-    /// ```
+    /// ``` rs
     /// let mut js_arr = JsArray::new(None);
     /// let index_one = JsString::new("Hello, world!".to_string()).build_string();
     /// js_arr.push(index_one);
