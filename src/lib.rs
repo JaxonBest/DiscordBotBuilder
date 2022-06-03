@@ -6,3 +6,4 @@ mod tests {
 }
 
 pub mod js;
+pub mod discord;
