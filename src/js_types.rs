@@ -10,7 +10,7 @@ impl JsString {
 
     /// Converts the JsString's content into a usable string in Javascript.
     pub fn build_string(&self) -> String {
-        let inner = self.content.replace('"', "\\\"");
+        let inner = self.content.replace('"', "\\\""); // Replaces " with \"
         format!("\"{}\"", inner)
     }
 }
