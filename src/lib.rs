@@ -5,5 +5,4 @@ mod tests {
     }
 }
 
-pub mod js_types;
-pub mod js_var;
+pub mod js;
