@@ -8,6 +8,10 @@ impl JsString {
         Self { content }
     }
 
+    pub fn from_str(content: &str) -> Self {
+        Self { content: content.to_string() }
+    }
+
     /// Converts the JsString's content into a usable string in Javascript.
     pub fn build_string(&self) -> String {
         let inner = self.content.replace('"', "\\\""); // Replaces " with \"
